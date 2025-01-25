@@ -1,4 +1,158 @@
+
+/*variables.css*/
+:root {
+  --primary: #FB4B4D;
+  --secondary: #CDFD3B;
+  --primary-font: 'RobotoFont';
+  --dark-theme: #3D3669;
+  --primary-dark: #B21A1D;
+}
+
+/*index.css*/
+* {
+  text-transform: uppercase;
+  font-family: var(--primary-font), sans-serif;
+  text-decoration: none;
+  font-weight: normal;
+  color: black;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7vw;
+}
 body {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+/*global.css*/
+* {
   margin: 0;
   padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+
+/*animations.css */
+.navigation-desktop ul li button:hover {
+  background-color: black;
+  transition: 1s;
+}
+
+.navigation-desktop ul li a:hover {
+  color: var(--primary);
+  transition: 1s;
+}
+
+.checkbox:checked ~ .navigation-mobile .dropdown-menu {
+  animation: dropdown 1s ease-in-out forwards;
+}
+
+.checkbox:checked + label .burger-menu-button {
+  background-image: url('../public/assets/images/vector/close.svg');
+}
+
+@keyframes run {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-60%);
+  }
+}
+
+@keyframes dropdown {
+  0% {
+    transform: translateY(-150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+/*adaptive.css*/
+@media (max-width: 960px) {
+  /*общие*/
+
+  body {
+    margin: 0;
+  }
+  html {
+    scroll-padding-top: 17vw;
+  }
+
+  /*стилизация грид-секций*/
+  .info-section,
+  .story-section {
+    grid-template-columns: 100%;
+  }
+  .left-column img,
+  .right-column img {
+    width: 100vw;
+    padding: 3vw 3vw 1.8vw;
+    box-sizing: border-box;
+  }
+  .left-column {
+    border: none;
+  }
+  h1 {
+    border-top: solid 0.1vw black;
+    padding: 4vw 6vw;
+    font-size: 7vw;
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+  body,
+  main,
+  .header-for-desktop,
+  .header-for-mobile,
+  .container-for-visible_nav,
+  .dropdown-menu,
+  footer {
+    background-color: var(--dark-theme);
+  }
+  .container-for-bottom-running-line img,
+  .container-for-running-line img,
+  .container-for-slogan img,
+  .logo,
+  .container-for-fires {
+    filter: invert(1);
+  }
+  * {
+    color: white;
+  }
+  button {
+    background-color: var(--primary-dark);
+  }
+  .container-for-product-info > *,
+  h3 p,
+  footer * {
+    color: black;
+  }
+  main,
+  .container-for-visible_nav,
+  .dropdown-menu,
+  .container-for-running-line,
+  .container-for-slogan,
+  h1,
+  .container-for-bottom-running-line,
+  footer,
+  .container-for-story,
+  .container-for-story-card,
+  .left-column,
+  .header-for-desktop {
+    border-color: white;
+  }
+}
+
+@media(prefers-reduced-motion: reduce) {
+  .container-for-items-of-running-line {
+    animation: none;
+  }
 }

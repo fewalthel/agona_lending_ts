@@ -1,0 +1,18 @@
+/*cтилизация последней секции*/
+.bottom-foreign-text {
+    width: 97.9vw;
+    position: absolute;
+    z-index: 2;
+    top: -7.5vw;
+}
+.decor-section {
+    position: relative;
+}
+
+@media(max-width: 960px) {
+    /*cтилизация последней секции*/
+    .bottom-foreign-text {
+        width: 100vw;
+        top: 4vw;
+    }
+}

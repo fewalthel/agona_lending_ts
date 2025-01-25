@@ -1,0 +1,119 @@
+main {
+    margin-top: 7vw;
+    width: 98vw;
+    border: solid 0.1vw black;
+}
+section {
+    display: grid;
+    width: 98vw;
+}
+
+
+/*cтилизация бегущих строк и строки со слоганом*/
+.container-for-bottom-running-line,
+.container-for-running-line,
+.container-for-slogan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 98vw;
+    border-top: solid 0.1vw black;
+    border-bottom: solid 0.1vw black;
+    overflow: hidden;
+}
+.container-for-items-of-running-line {
+    display: flex;
+    justify-content: space-between;
+    text-wrap: nowrap;
+}
+.left-column .container-for-running-line .container-for-items-of-running-line {
+    animation: run 8s linear infinite;
+}
+.products-section .container-for-bottom-running-line .container-for-items-of-running-line {
+    animation: run 16s linear infinite;
+}
+.decor-section .container-for-bottom-running-line .container-for-items-of-running-line {
+    animation: run 20s linear infinite;
+}
+#bottom-running-line {
+    border-bottom: none;
+}
+.container-for-running-line {
+    width: 49vw;
+}
+.container-for-items-of-running-line img {
+    width: 5vw;
+    padding: 1vw;
+}
+.container-for-items-of-running-line p {
+    font-size: 1.7vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+.container-for-slogan > * {
+    font-size: 4.5vw;
+    margin: 4vw;
+    text-align: center;
+}
+.container-for-slogan img{
+    width: 15vw;
+}
+
+
+
+@media (max-width: 960px) {
+    /*общие*/
+    main {
+        width: 100vw;
+        border: none;
+        margin: 17vw 0 0;
+    }
+
+    section {
+        width: 100vw;
+    }
+
+
+
+    /*стилизация бегущих строк и строки со слоганом*/
+    .container-for-bottom-running-line,
+    .container-for-running-line,
+    .container-for-slogan {
+        width: 100vw;
+    }
+    .container-for-items-of-running-line img {
+        width: 22vw;
+        padding: 2.5vw;
+        box-sizing: border-box;
+    }
+    .container-for-items-of-running-line p {
+        font-size: 4vw;
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+    }
+    .container-for-bottom-running-line {
+        border-bottom: solid 0.1vw black;;
+    }
+    .container-for-slogan > * {
+        margin: 8vw 0;
+        font-size: 5.5vw;
+    }
+    .container-for-slogan img {
+        width: 17vw;
+        margin: 3vw;
+    }
+    .container-for-bottom-running-line img,
+    .container-for-running-line img {
+        width: 22vw;
+    }
+    .container-for-running-line p,
+    .container-for-bottom-running-line p {
+        font-size: 4vw;
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+    }
+    .container-for-bottom-running-line {
+        border-bottom: solid 0.1vw black;;
+    }
+
+}

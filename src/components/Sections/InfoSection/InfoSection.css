@@ -1,0 +1,27 @@
+/*стилизация верхней секции*/
+.info-section {
+    grid-template-columns: 50% 50%;
+}
+
+.left-column,
+.right-column {
+    display: inline-block;
+}
+
+.left-column {
+    border-right: solid 0.1vw black;
+}
+
+.left-column img,
+.right-column img {
+    width: 47vw;
+    padding: 1vw;
+}
+
+h1 {
+    border-bottom: solid 0.1vw black;
+    padding: 2vw 4vw;
+    font-size: 4.2vw;
+    text-align: center;
+}
+

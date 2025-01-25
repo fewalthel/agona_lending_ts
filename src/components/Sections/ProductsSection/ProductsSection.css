@@ -1,0 +1,109 @@
+/*стилизация карточек товара*/
+.container-for-cards,
+.container-for-fires {
+    justify-content: space-between;
+    display: flex;
+    width: 98vw;
+}
+.container-for-fires {
+    align-items: flex-start;
+}
+.container-for-products-cards-and-fires {
+    width: 98vw;
+    height: 50vw;
+    display: inline-block;
+    position: relative;
+}
+.products-section-img {
+    display: flex;
+    width: 96vw;
+    padding-left: 1vw;
+    padding-bottom: 1vw;
+}
+.container-for-cards {
+    justify-content: space-around;
+    position: absolute;
+    z-index: 1;
+    top: 3vw;
+}
+.container-for-fires img {
+    padding: 2vw;
+    width: 5vw;
+}
+.product-card {
+    position: relative;
+    display: grid;
+}
+.product-card img {
+    width: 30vw;
+}
+.container-for-product-info {
+    position: absolute;
+    z-index: 2;
+    top: 8vw;
+    left: 1vw;
+    text-align: center;
+    width: 28vw;
+}
+.container-for-product-info img {
+    width: 27vw;
+}
+.product-description {
+    font-size: 1.3vw;
+    margin: 1vw;
+}
+.product-name{
+    font-size: 2.3vw;
+    margin: 1vw;
+}
+
+@media (max-width: 960px) {
+
+
+    /*стилизация секции с карточками товаров*/
+    .container-for-products-cards-and-fires {
+        width: 100vw;
+        overflow: scroll;
+        height: 113.5vw;
+    }
+    .container-for-cards {
+        width: 210vw;
+        height: 80vw;
+        top: 12vw;
+    }
+    .container-for-fires {
+        width: 210vw;
+        height: 50vw;
+        padding-top: 5vw;
+        box-sizing: border-box;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    .container-for-fires img {
+        padding: 0;
+        width: 12vw;
+    }
+    .product-card img {
+        width: 65vw;
+    }
+    .container-for-product-info {
+        top: 15vw;
+        width: 63vw;
+    }
+    .container-for-product-info img {
+        width: 58vw;
+    }
+    .product-description {
+        font-size: 3.2vw;
+        margin: 3vw;
+    }
+    .product-name {
+        font-size: 5vw;
+        margin: 3vw;
+    }
+    .products-section-img {
+        width: 100vw;
+        padding: 0 3vw 3vw;
+        box-sizing: border-box;
+    }
+}

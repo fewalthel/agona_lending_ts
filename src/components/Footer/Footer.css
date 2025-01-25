@@ -1,0 +1,38 @@
+/*стилизация футера*/
+footer {
+    border: solid 0.1vw black;
+    border-top: none;
+    padding-top: 53.19vw;
+    width: 98vw;
+}
+
+footer address {
+    font-style: normal;
+    border-top: solid 0.1vw black;
+    padding: 2vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary);
+    width: 97.8vw;
+    font-size: 1.5vw;
+}
+
+@media (max-width: 960px) {
+    /*стилизация футера*/
+    footer {
+        border: none;
+        border-top: solid 0.1vw black;
+        padding-top: 54.3vw;
+        width: 100vw;
+    }
+
+    footer address {
+        width: 100vw;
+        font-size: 3.5vw;
+        padding: 4vw;
+    }
+    footer address p {
+        padding-top: 7vw;
+    }
+}
