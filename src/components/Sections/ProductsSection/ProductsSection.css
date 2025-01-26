@@ -22,6 +22,22 @@
     z-index: 1;
     top: 3vw;
 }
+.container-for-slogan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 98vw;
+    border-top: solid 0.1vw black;
+    border-bottom: solid 0.1vw black;
+    overflow: hidden;
+}.container-for-slogan > * {
+     font-size: 4.5vw;
+     margin: 4vw;
+     text-align: center;
+ }
+.container-for-slogan img{
+    width: 15vw;
+}
 
 /*адаптив*/
 @media (max-width: 960px) {
@@ -39,5 +55,24 @@
         width: 100vw;
         padding: 0 3vw 3vw;
         box-sizing: border-box;
+    }
+    .container-for-slogan {
+        width: 100vw;
+    }
+    .container-for-slogan > * {
+           margin: 8vw 0;
+           font-size: 5.5vw;
+       }
+    .container-for-slogan img {
+        width: 17vw;
+        margin: 3vw;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .container-for-slogan {
+        border-color: white;
+    }
+    .container-for-slogan * {
+        color: white;
     }
 }

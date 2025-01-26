@@ -1,5 +1,4 @@
-
-/*cтилизация предпоследней секции*/
+/*основные*/
 .story-section {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -39,10 +38,11 @@
     width: 49vw;
 }
 
-
+/*адаптив*/
 @media (max-width: 960px) {
-
-    /* стилизация предпоследней секции */
+    .story-section {
+        grid-template-columns: 100%;
+    }
     .container-for-story h2 {
         padding-top: 5vw;
         padding-bottom: 5vw;
@@ -67,5 +67,11 @@
     .container-for-story,
     .container-for-story img {
         width: 100vw;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .container-for-story,
+    .container-for-story-card {
+        border-color: white;
     }
 }

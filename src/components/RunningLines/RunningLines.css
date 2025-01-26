@@ -1,0 +1,92 @@
+/*основные*/
+.container-for-bottom-running-line,
+.container-for-running-line {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 98vw;
+    border-top: solid 0.1vw black;
+    border-bottom: solid 0.1vw black;
+    overflow: hidden;
+}
+.container-for-items-of-running-line {
+    display: flex;
+    justify-content: space-between;
+    text-wrap: nowrap;
+}
+.container-for-running-line .container-for-items-of-running-line {
+    animation: run 8s linear infinite;
+}
+.products-section .container-for-bottom-running-line .container-for-items-of-running-line {
+    animation: run 16s linear infinite;
+}
+.decor-section .container-for-bottom-running-line .container-for-items-of-running-line {
+    animation: run 20s linear infinite;
+}
+#bottom-running-line {
+    border-bottom: none;
+}
+.container-for-running-line {
+    width: 49vw;
+}
+.container-for-items-of-running-line img {
+    width: 5vw;
+    padding: 1vw;
+}
+.container-for-items-of-running-line p {
+    font-size: 1.7vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+
+/*адаптив*/
+@media (max-width: 960px) {
+    .container-for-bottom-running-line,
+    .container-for-running-line {
+        width: 100vw;
+    }
+    .container-for-items-of-running-line img {
+        width: 22vw;
+        padding: 2.5vw;
+        box-sizing: border-box;
+    }
+    .container-for-items-of-running-line p {
+        font-size: 4vw;
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+    }
+    .container-for-bottom-running-line {
+        border-bottom: solid 0.1vw black;;
+    }
+    .container-for-bottom-running-line img,
+    .container-for-running-line img {
+        width: 22vw;
+    }
+    .container-for-running-line p,
+    .container-for-bottom-running-line p {
+        font-size: 4vw;
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+    }
+    .container-for-bottom-running-line {
+        border-bottom: solid 0.1vw black;;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .container-for-bottom-running-line img,
+    .container-for-running-line img {
+        filter: invert(1);
+    }
+    .container-for-running-line,
+    .container-for-bottom-running-line {
+        border-color: white;
+    }
+    .container-for-running-line *, .container-for-bottom-running-line * {
+        color: white;
+    }
+}
+@media(prefers-reduced-motion: reduce) {
+    .container-for-items-of-running-line {
+        animation: none;
+    }
+}

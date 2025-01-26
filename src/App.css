@@ -5,7 +5,6 @@
   --dark-theme: #3D3669;
   --primary-dark: #B21A1D;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +26,6 @@ body {
     width: 0;
 }
 
-
 /*анимации*/
 @keyframes run {
   0% {
@@ -40,67 +38,25 @@ body {
 
 /*адаптив*/
 @media (max-width: 960px) {
-  /*общие*/
   body {
     margin: 0;
   }
   html {
     scroll-padding-top: 17vw;
   }
-
-  /*стилизация грид-секций*/
-  .info-section,
-  .story-section {
-    grid-template-columns: 100%;
-  }
-  .left-column img,
-  .right-column img {
-    width: 100vw;
-    padding: 3vw 3vw 1.8vw;
-    box-sizing: border-box;
-  }
-  .left-column {
-    border: none;
-  }
-  h1 {
-    border-top: solid 0.1vw black;
-    padding: 4vw 6vw;
-    font-size: 7vw;
-  }
-
 }
 
 @media (prefers-color-scheme: dark) {
-  body,
-  main {
+  body {
     background-color: var(--dark-theme);
   }
-  .container-for-bottom-running-line img,
-  .container-for-running-line img,
   .container-for-slogan img{
     filter: invert(1);
   }
   * {
     color: white;
   }
-  .container-for-product-info > *,
   h3 p{
     color: black;
-  }
-  main,
-  .container-for-running-line,
-  .container-for-slogan,
-  h1,
-  .container-for-bottom-running-line,
-  .container-for-story,
-  .container-for-story-card,
-  .left-column {
-    border-color: white;
-  }
-}
-
-@media(prefers-reduced-motion: reduce) {
-  .container-for-items-of-running-line {
-    animation: none;
   }
 }

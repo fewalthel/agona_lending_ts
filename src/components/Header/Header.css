@@ -39,7 +39,6 @@ button {
 
 /*адаптив*/
 @media (max-width: 960px) {
-    /* стилизация хедера */
     .header-for-desktop {
         display: none;
     }

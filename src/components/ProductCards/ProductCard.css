@@ -48,3 +48,8 @@
         margin: 3vw;
     }
 }
+@media (prefers-color-scheme: dark) {
+    .container-for-product-info > * {
+        color: black;
+    }
+}

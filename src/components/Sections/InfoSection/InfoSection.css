@@ -1,23 +1,19 @@
-/*стилизация верхней секции*/
+/*основные*/
 .info-section {
     grid-template-columns: 50% 50%;
 }
-
 .left-column,
 .right-column {
     display: inline-block;
 }
-
 .left-column {
     border-right: solid 0.1vw black;
 }
-
-.left-column img,
-.right-column img {
+.left-column picture img,
+.right-column picture img {
     width: 47vw;
     padding: 1vw;
 }
-
 h1 {
     border-bottom: solid 0.1vw black;
     padding: 2vw 4vw;
@@ -25,3 +21,29 @@ h1 {
     text-align: center;
 }
 
+/*адаптив*/
+@media (max-width: 960px) {
+    .info-section{
+        grid-template-columns: 100%;
+    }
+    .left-column picture img,
+    .right-column picture img {
+        width: 100vw;
+        padding: 3vw 3vw 1.8vw;
+        box-sizing: border-box;
+    }
+    .left-column {
+        border: none;
+    }
+    h1 {
+        border-top: solid 0.1vw black;
+        padding: 4vw 6vw;
+        font-size: 7vw;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    h1, .left-column {
+        border-color: white;
+    }
+}
