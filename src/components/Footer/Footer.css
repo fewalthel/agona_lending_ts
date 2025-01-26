@@ -1,11 +1,10 @@
-/*стилизация футера*/
+/*основные*/
 footer {
     border: solid 0.1vw black;
     border-top: none;
     padding-top: 53.19vw;
     width: 98vw;
 }
-
 footer address {
     font-style: normal;
     border-top: solid 0.1vw black;
@@ -18,6 +17,7 @@ footer address {
     font-size: 1.5vw;
 }
 
+/*адаптив*/
 @media (max-width: 960px) {
     /*стилизация футера*/
     footer {
@@ -26,7 +26,6 @@ footer address {
         padding-top: 54.3vw;
         width: 100vw;
     }
-
     footer address {
         width: 100vw;
         font-size: 3.5vw;
@@ -34,5 +33,14 @@ footer address {
     }
     footer address p {
         padding-top: 7vw;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    footer {
+        background-color: var(--dark-theme);
+        border-color: white;
+    }
+    footer * {
+        color: black;
     }
 }

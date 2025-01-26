@@ -29,13 +29,7 @@ export const InfoSection: React.FC = () => {
             </div>
             <div
                 className="right-column">
-                <h1>THE
-                    FIRST
-                    HOT
-                    SAUCE
-                    MADE
-                    FOR
-                    COFFEE</h1>
+                <h1>THE FIRST HOT SAUCE MADE FOR COFFEE</h1>
                 <picture>
                     <source
                         media="(min-width: 1440px)"

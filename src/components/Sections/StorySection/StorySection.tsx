@@ -7,11 +7,7 @@ export const StorySection: React.FC = () => {
                 className="section story-section">
                 <div
                     className="container container-for-story">
-                    <h2>the
-                        story
-                        behind<br/>the
-                        souse
-                    </h2>
+                    <h2>the story behind<br/>the souse</h2>
                     <picture>
                         <source
                             media="(min-width: 1440px)"
@@ -24,8 +20,7 @@ export const StorySection: React.FC = () => {
                             alt="woman"/>
                     </picture>
                 </div>
-                <div
-                    className="container container-for-story-card">
+                <div className="container container-for-story-card">
                     <img
                         src="/assets/images/vector/background_for_text.svg"
                         alt="background for text in the form of an octagon with jars and rabbits"/>

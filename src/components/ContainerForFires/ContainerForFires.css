@@ -1,0 +1,34 @@
+/*основные*/
+.container-for-fires {
+    justify-content: space-between;
+    display: flex;
+    width: 98vw;
+}
+.container-for-fires {
+    align-items: flex-start;
+}
+.container-for-fires img {
+     padding: 2vw;
+     width: 5vw;
+ }
+
+/*адаптив*/
+@media (max-width: 960px) {
+    .container-for-fires {
+        width: 210vw;
+        height: 50vw;
+        padding-top: 5vw;
+        box-sizing: border-box;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    .container-for-fires img {
+        padding: 0;
+        width: 12vw;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .container-for-fires {
+        filter: invert(1);
+    }
+}

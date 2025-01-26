@@ -2,7 +2,6 @@ import React from 'react';
 
 export const HeaderForMobile: React.FC = () => {
     return (
-        <>
             <div
                 className="header-for-mobile">
                 <div
@@ -40,12 +39,11 @@ export const HeaderForMobile: React.FC = () => {
 
                     <a href="#top"><img
                         className="logo"
-                        src="../../../public/assets/images/vector/mobile_logo.svg"
+                        src="public/assets/images/vector/mobile_logo.svg"
                         alt="logo for mobile"/></a>
                     <button
                         className="users-button"></button>
                 </div>
             </div>
-        </>
     )
 }

@@ -1,4 +1,4 @@
-/*стилизация хедера*/
+/*основные*/
 .header-for-mobile {
     display: none;
 }
@@ -37,8 +37,8 @@ button {
     width: 12vw;
 }
 
+/*адаптив*/
 @media (max-width: 960px) {
-
     /* стилизация хедера */
     .header-for-desktop {
         display: none;
@@ -71,10 +71,10 @@ button {
         background-repeat: no-repeat;
     }
     .burger-menu-button{
-        background-image: url('../../../public/assets/images/vector/menu.svg');
+        background-image: url('/assets/images/vector/menu.svg');
     }
     .users-button {
-        background-image: url('../../../public/assets/images/vector/users.svg');
+        background-image: url('/assets/images/vector/users.svg');
     }
     .container-for-visible_nav button img {
         width: 5vw;
@@ -124,10 +124,6 @@ button {
         justify-content: center;
     }
 }
-
-
-
-
 @media (prefers-color-scheme: dark) {
     .header-for-desktop,
     .header-for-mobile,
@@ -151,5 +147,29 @@ button {
     .dropdown-menu,
     .header-for-desktop {
         border-color: white;
+    }
+}
+
+/*анимации*/
+.navigation-desktop ul li button:hover {
+    background-color: black;
+    transition: 1s;
+}
+.navigation-desktop ul li a:hover {
+    color: var(--primary);
+    transition: 1s;
+}
+.checkbox:checked ~ .navigation-mobile .dropdown-menu {
+    animation: dropdown 1s ease-in-out forwards;
+}
+.checkbox:checked + label .burger-menu-button {
+    background-image: url('/assets/images/vector/close.svg');
+}
+@keyframes dropdown {
+    0% {
+        transform: translateY(-150%);
+    }
+    100% {
+        transform: translateX(0);
     }
 }

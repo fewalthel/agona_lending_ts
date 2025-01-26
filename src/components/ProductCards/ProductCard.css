@@ -1,0 +1,50 @@
+/*основные*/
+.product-card {
+    position: relative;
+    display: grid;
+}
+.product-card img {
+    width: 30vw;
+}
+.container-for-product-info {
+    position: absolute;
+    z-index: 2;
+    top: 8vw;
+    left: 1vw;
+    text-align: center;
+    width: 28vw;
+}
+.container-for-product-info img {
+    width: 27vw;
+}
+.product-description {
+    font-size: 1.3vw;
+    margin: 1vw;
+}
+.product-name{
+    font-size: 2.3vw;
+    margin: 1vw;
+}
+
+/*адаптив*/
+@media (max-width: 960px) {
+
+    .product-card img {
+        width: 65vw;
+    }
+    .container-for-product-info {
+        top: 15vw;
+        width: 63vw;
+    }
+    .container-for-product-info img {
+        width: 58vw;
+    }
+    .product-description {
+        font-size: 3.2vw;
+        margin: 3vw;
+    }
+    .product-name {
+        font-size: 5vw;
+        margin: 3vw;
+    }
+}
