@@ -1,6 +1,6 @@
 /*основные*/
 main {
-    margin-top: 7vw;
+    margin-top: 3.3rem;
     width: 98vw;
     border: solid 0.1vw black;
 }
@@ -9,17 +9,17 @@ section {
     width: 98vw;
 }
 
+/*адаптив*/
 @media (max-width: 960px) {
     main {
         width: 100vw;
         border: none;
-        margin: 17vw 0 0;
+        margin: 9rem 0 0;
     }
     section {
         width: 100vw;
     }
 }
-
 @media (prefers-color-scheme: dark) {
     main {
         background-color: var(--dark-theme);

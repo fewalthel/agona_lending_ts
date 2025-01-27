@@ -1,3 +1,4 @@
+/*переменные*/
 :root {
   --primary: #FB4B4D;
   --secondary: #CDFD3B;
@@ -5,6 +6,8 @@
   --dark-theme: #3D3669;
   --primary-dark: #B21A1D;
 }
+
+/*общие*/
 * {
   margin: 0;
   padding: 0;
@@ -26,16 +29,6 @@ body {
     width: 0;
 }
 
-/*анимации*/
-@keyframes run {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-60%);
-  }
-}
-
 /*адаптив*/
 @media (max-width: 960px) {
   body {
@@ -45,18 +38,11 @@ body {
     scroll-padding-top: 17vw;
   }
 }
-
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--dark-theme);
   }
-  .container-for-slogan img{
-    filter: invert(1);
-  }
   * {
     color: white;
-  }
-  h3 p{
-    color: black;
   }
 }

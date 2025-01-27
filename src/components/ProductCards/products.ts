@@ -7,21 +7,21 @@ export interface IProductCard {
 
 export const Products: IProductCard[] = [
     {
-        //pirple
+        //pirple syrup
         name: "LIGHT ROAST BLEND",
         description: "tangy and tingly",
         pathToImage: '/assets/images/vector/syrup_with_purple_label.svg',
         alt: 'syrup with purple label'
     },
     {
-        //two
+        //two syrups
         name: 'UJJO SAMPLER PACK',
         description: "light & dark roast",
         pathToImage: '/assets/images/vector/two_syrups.svg',
         alt: 'two syrups'
     },
     {
-        //pink
+        //pink syrup
         name: "DARK ROAST BLEND",
         description: "tangy and tingly",
         pathToImage: '/assets/images/vector/syrup_with_pink_label.svg',

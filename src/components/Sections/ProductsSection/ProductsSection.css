@@ -31,12 +31,12 @@
     border-bottom: solid 0.1vw black;
     overflow: hidden;
 }.container-for-slogan > * {
-     font-size: 4.5vw;
-     margin: 4vw;
+     font-size: 2rem;
+     margin: 1.8rem;
      text-align: center;
  }
 .container-for-slogan img{
-    width: 15vw;
+    width: 8rem;
 }
 
 /*адаптив*/
@@ -59,16 +59,19 @@
     .container-for-slogan {
         width: 100vw;
     }
-    .container-for-slogan > * {
+    .container-for-slogan > p {
            margin: 8vw 0;
            font-size: 5.5vw;
        }
-    .container-for-slogan img {
+    .container-for-slogan > img {
         width: 17vw;
         margin: 3vw;
     }
 }
 @media (prefers-color-scheme: dark) {
+    .container-for-slogan img{
+        filter: invert(1);
+    }
     .container-for-slogan {
         border-color: white;
     }

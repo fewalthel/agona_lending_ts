@@ -8,7 +8,7 @@
     border-top: solid 0.1vw black;
 }
 .container-for-story h2 {
-    padding-top: 2vw;
+    padding-top: 2.5vw;
     padding-bottom: 2vw;
     text-align: center;
     font-size: 3.3vw;
@@ -73,5 +73,8 @@
     .container-for-story,
     .container-for-story-card {
         border-color: white;
+    }
+    h3 p{
+        color: black;
     }
 }
