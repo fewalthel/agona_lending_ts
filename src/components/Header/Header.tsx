@@ -1,5 +1,5 @@
-import './Header.css';
 import React from 'react';
+import './Header.css';
 import {HeaderForDesktop} from "./HeaderForDesktop.tsx";
 import {HeaderForMobile} from "./HeaderForMobile.tsx";
 

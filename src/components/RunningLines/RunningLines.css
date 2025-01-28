@@ -20,7 +20,7 @@
     animation: run 16s linear infinite;
 }
 #container-for-bottom-running-line .container-for-items-of-running-line {
-    animation: run 21s linear infinite;
+    animation: run 50s linear infinite;
 }
 #container-for-bottom-running-line {
     border-bottom: none;

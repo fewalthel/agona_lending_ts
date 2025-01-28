@@ -1,7 +1,7 @@
 import React from 'react';
-import './ContainerForFires.css';
+import './Fires.css';
 
-export const ContainerForFires: React.FC = () => {
+export const Fires: React.FC = () => {
     return (
         <div className="container-for-fires">
             <img src="/assets/images/vector/fire_in_round.svg" alt="picture of fire"/>

@@ -1,19 +1,17 @@
 import React from "react";
 import './StorySection.css'
+import { Pictures } from "../../Picture/pictures.ts";
+import { Picture } from "../../Picture/Picture.tsx";
 
 export const StorySection: React.FC = () => {
     return (
             <section className="section story-section">
                 <div className="container container-for-story">
                     <h2>the story behind<br/>the souse</h2>
-                    <picture>
-                        <source media="(min-width: 1440px)" srcSet="/assets/images/large/woman_large.jpg"/>
-                        <source media="(min-width: 1024px)" srcSet="/assets/images/medium/woman_medium.jpg"/>
-                        <img src="/assets/images/small/woman_small.jpg" alt="woman"/>
-                    </picture>
+                    <Picture {...Pictures[6]} />
                 </div>
                 <div className="container container-for-story-card">
-                    <img src="/assets/images/vector/background_for_text.svg" alt="background for text in the form of an octagon with jars and rabbits"/>
+                    <Picture {...Pictures[7]}/>
                     <h3>
                         <p>HELLO, I’M LAUREN AND AS A LIFELONG ADVENTUROUS EATER, I’VE TRIED A LOT OF CRAZY THINGS,
                             BUT I NEVER THOUGHT HOT SAUCE IN COFFEE WAS A SANE OPTION UNTIL A FRIEND DARED ME TO TRY IT.</p>
