@@ -2,7 +2,7 @@ import React from "react";
 import './ProductsSection.css';
 import { Products, IProductCard } from '../../ProductCards/products.ts';
 import { ProductCard } from "../../ProductCards/ProductCard.tsx";
-import { AverageRunningLine } from "../../RunningLines/AverageRunningLine.tsx";
+import { RunningLine } from "../../RunningLines/RunningLine.tsx";
 import { Fires } from "../../Fires/Fires.tsx";
 import { Picture } from "../../Picture/Picture.tsx";
 import { Pictures } from "../../Picture/pictures.ts";
@@ -23,7 +23,7 @@ export const ProductsSection: React.FC = () => {
                         ))}
                     </div>
                 </div>
-                <AverageRunningLine/>
+                <RunningLine repeats={10} text={'put some fire in your belly'} id={'container-for-average-running-line'}/>
                 <Picture {...Pictures[5]}/>
             </section>
     )

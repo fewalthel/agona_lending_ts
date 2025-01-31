@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './RunningLines.css';
 
 export const BottomRunningLine: React.FC = () => {
     const [items, setItems] = useState([]);

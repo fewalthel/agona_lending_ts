@@ -44,12 +44,14 @@
     .container-for-products-cards-and-fires {
         width: 100vw;
         overflow: scroll;
-        height: 113.5vw;
+        height: 58rem;
     }
     .container-for-cards {
-        width: 210vw;
-        height: 80vw;
-        top: 12vw;
+        width: 300vw;
+        height: 42rem;
+        top: 7rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
     .products-section-img {
         width: 100vw;
@@ -66,6 +68,24 @@
     .container-for-slogan > img {
         width: 17vw;
         margin: 3vw;
+    }
+}
+@media (max-width: 760px) {
+    .container-for-products-cards-and-fires {
+        height: 52rem;
+    }
+    .container-for-cards {
+        width: 330vw;
+        margin: 0;
+    }
+}
+@media (max-width: 600px) {
+    .container-for-products-cards-and-fires {
+        height: 40rem;
+    }
+    .container-for-cards {
+        height: 30rem;
+        top: 4rem;
     }
 }
 @media (prefers-color-scheme: dark) {
