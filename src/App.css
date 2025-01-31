@@ -19,7 +19,7 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 7vw;
+  scroll-padding-top: 10rem;
 }
 body {
   margin-left: 1vw;
@@ -35,7 +35,12 @@ body {
     margin: 0;
   }
   html {
-    scroll-padding-top: 17vw;
+    scroll-padding-top: 9rem;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    scroll-padding-top: 7.6rem;
   }
 }
 @media (prefers-color-scheme: dark) {

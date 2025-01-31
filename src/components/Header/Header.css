@@ -119,6 +119,19 @@ button {
         justify-content: center;
     }
 }
+@media (max-width: 600px) {
+    .container-for-visible_nav {
+        height: 6.7rem;
+    }
+    .container-for-visible_nav button {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+    .container-for-visible_nav a img {
+        width: 4rem;
+        height: 4rem;
+    }
+}
 @media (prefers-color-scheme: dark) {
     .header-for-desktop,
     .header-for-mobile,

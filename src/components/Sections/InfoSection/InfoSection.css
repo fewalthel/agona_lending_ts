@@ -38,11 +38,22 @@ h1 {
     }
     h1 {
         border-top: solid 0.1vw black;
-        padding: 4vw 6vw;
-        font-size: 7vw;
+        padding: 2rem 3rem;
+        font-size: 3rem;
     }
 }
-
+@media (max-width: 800px) {
+    h1 {
+        padding: 1.5rem 2.5rem;
+        font-size: 2.22rem;
+    }
+}
+@media (max-width: 600px) {
+    h1 {
+        padding: 1rem 2rem;
+        font-size: 1.67rem;
+    }
+}
 @media (prefers-color-scheme: dark) {
     h1, .left-column {
         border-color: white;

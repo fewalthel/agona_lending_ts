@@ -14,10 +14,15 @@ section {
     main {
         width: 100vw;
         border: none;
-        margin: 9rem 0 0;
+        margin-top: 9rem;
     }
     section {
         width: 100vw;
+    }
+}
+@media (max-width: 600px) {
+    main {
+        margin-top: 6.7rem;
     }
 }
 @media (prefers-color-scheme: dark) {

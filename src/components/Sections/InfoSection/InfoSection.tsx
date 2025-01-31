@@ -13,7 +13,7 @@ export const InfoSection: React.FC = () => {
                 <Picture {...Pictures[1]} />
             </div>
             <div className="right-column">
-                <h1>THE FIRST HOT SAUCE MADE FOR COFFEE</h1>
+                <h1>THE FIRST HOT SAUCE<br/>MADE FOR COFFEE</h1>
                 <Picture {...Pictures[2]} />
             </div>
         </section>

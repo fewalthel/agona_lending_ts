@@ -44,9 +44,9 @@
         grid-template-columns: 100%;
     }
     .container-for-story h2 {
-        padding-top: 5vw;
-        padding-bottom: 5vw;
-        font-size: 6vw;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        font-size: 2.8rem;
     }
     .container-for-story-card {
         width: 100vw;
@@ -68,6 +68,18 @@
     .container-for-story img {
         width: 100vw;
     }
+}
+@media (max-width: 760px) {
+    .container-for-story h2 {
+        padding-top: 1.8rem;
+        padding-bottom: 1.8rem;
+        font-size: 2rem;
+    }
+}
+@media (max-width: 600px) {
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    font-size: 2rem;
 }
 @media (prefers-color-scheme: dark) {
     .container-for-story,
