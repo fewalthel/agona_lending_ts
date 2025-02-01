@@ -8,7 +8,7 @@
     background-color: white;
     z-index: 3;
     width: 98vw;
-    height: 3.3rem;
+    height: 7.8rem;
     border: solid 0.1vw black;
 }
 ul {
@@ -19,8 +19,8 @@ ul {
 }
 .navigation-desktop ul li a,
 .navigation-desktop ul li button {
-    padding: 0.5rem 1rem;
-    font-size: 0.7rem;
+    padding: 1.3rem 2.2rem;
+    font-size: 2rem;
 }
 ul li {
     display: flex;
@@ -33,11 +33,53 @@ button {
     cursor: pointer;
 }
 .logo {
-    height: 2rem;
-    width: 6rem;
+    height: 4.5rem;
+    width: 9rem;
 }
 
 /*адаптив*/
+@media (max-width: 2560px) {
+    .navigation-desktop ul li a,
+    .navigation-desktop ul li button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.3rem;
+    }
+    .logo {
+        height: 3.6rem;
+        width: 8rem;
+    }
+    .header-for-desktop {
+        height: 5.5rem;
+    }
+}
+@media (max-width: 1920px) {
+    .navigation-desktop ul li a,
+    .navigation-desktop ul li button {
+        padding: 0.8rem 1.4rem;
+        font-size: 1rem;
+    }
+    .logo {
+        height: 3rem;
+        width: 7rem;
+    }
+    .header-for-desktop {
+        height: 5rem;
+    }
+}
+@media (max-width: 1280px) {
+    .navigation-desktop ul li a,
+    .navigation-desktop ul li button {
+        padding: 0.5rem 1rem;
+        font-size: 0.7rem;
+    }
+    .logo {
+        height: 2rem;
+        width: 6rem;
+    }
+    .header-for-desktop {
+        height: 3.3rem;
+    }
+}
 @media (max-width: 960px) {
     .header-for-desktop {
         display: none;

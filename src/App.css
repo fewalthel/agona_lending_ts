@@ -19,17 +19,35 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 10rem;
+  scroll-padding-top: 7.8rem;
 }
 body {
   margin-left: 1vw;
   margin-right: 1vw;
+/*  !*position: relative;*!
+  display: flex; !* Важно! Включает flexbox *!
+  justify-content: center; !* Центрирует по горизонтали *!*/
 }
 ::-webkit-scrollbar {
     width: 0;
 }
 
 /*адаптив*/
+@media (max-width: 2560px) {
+  html {
+    scroll-padding-top: 5.5rem;
+  }
+}
+@media (max-width: 1920px) {
+  html {
+    scroll-padding-top: 5rem;
+  }
+}
+@media (max-width: 1280px) {
+  html {
+    scroll-padding-top: 3.3rem;
+  }
+}
 @media (max-width: 960px) {
   body {
     margin: 0;
