@@ -4,10 +4,14 @@
     display: flex;
     width: 98vw;
     align-items: flex-start;
+
+    max-width: 3840px;
 }
 .container-for-fires > img {
      padding: 2vw;
      width: 5vw;
+
+    max-width: 192px;
 }
 
 /*адаптив*/

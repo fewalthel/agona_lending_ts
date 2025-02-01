@@ -3,6 +3,7 @@ main {
     margin-top: 7.8rem;
     width: 98vw;
     border: solid 0.1vw black;
+    max-width: 3840px;
 /*background-color: red;
     max-width: 2560px;
     display: block;
@@ -13,6 +14,8 @@ main {
 section {
     display: grid;
     width: 98vw;
+
+    max-width: 3840px;
 }
 
 /*адаптив*/

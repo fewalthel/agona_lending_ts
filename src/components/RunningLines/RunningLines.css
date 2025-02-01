@@ -7,6 +7,8 @@
     border-top: solid 0.1vw black;
     border-bottom: solid 0.1vw black;
     overflow: hidden;
+
+    max-width: 3840px;
 }
 .container-for-items-of-running-line {
     display: flex;
@@ -27,16 +29,17 @@
 }
 #container-for-top-running-line {
     width: 49vw;
+    max-width: 1920px;
 }
 .container-for-items-of-running-line img {
-    width: 3.5rem;
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
+    width: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .container-for-items-of-running-line p {
-    font-size: 1rem;
-    padding-top: 1.1rem;
-    padding-bottom: 1.1rem;
+    font-size: 2rem;
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
 }
 
 /*анимации*/
@@ -50,7 +53,30 @@
 }
 
 /*адаптив*/
-
+@media (max-width: 2560px) {
+    .container-for-items-of-running-line img {
+        width: 4rem;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+    }
+    .container-for-items-of-running-line p {
+        font-size: 1.5rem;
+        padding-top: 1.4rem;
+        padding-bottom: 1.4rem;
+    }
+}
+@media (max-width: 1920px) {
+    .container-for-items-of-running-line img {
+        width: 3.2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .container-for-items-of-running-line p {
+        font-size: 1.1rem;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+}
 @media (max-width: 1280px) {
     .container-for-items-of-running-line img {
         width: 3rem;

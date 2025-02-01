@@ -5,6 +5,8 @@
 }
 .product-card > img {
     width: 30vw;
+
+    max-width: 1152px;
 }
 .container-for-product-info {
     position: absolute;
@@ -16,6 +18,8 @@
 }
 .container-for-product-info > img {
     width: 27vw;
+
+    max-width: 1036.8px;
 }
 .product-description {
     font-size: 1.3vw;

@@ -18,6 +18,8 @@
     width: 49vw;
     height: 49vw;
     border-left: solid 0.1vw black;
+
+    max-width: calc(1920px - 2vw);
 }
 .container-for-story-card p {
     padding-bottom: 2vw;
@@ -31,11 +33,15 @@
     top: 10vw;
     left: 10vw;
     width: 28.6vw;
+
+    max-width: 1098.24px;
 }
 .container-for-story-card img,
 .container-for-story,
 .container-for-story img {
     width: 49vw;
+
+    max-width: 1920px;
 }
 
 /*адаптив*/

@@ -10,6 +10,8 @@
     width: 98vw;
     height: 7.8rem;
     border: solid 0.1vw black;
+
+    max-width: 3840px;
 }
 ul {
     display: flex;

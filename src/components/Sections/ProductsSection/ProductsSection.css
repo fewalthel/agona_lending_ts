@@ -3,24 +3,33 @@
     justify-content: space-between;
     display: flex;
     width: 98vw;
+
+    max-width: 3840px;
 }
 .container-for-products-cards-and-fires {
     width: 98vw;
     height: 50vw;
     display: inline-block;
     position: relative;
+
+    max-width: 3840px;
 }
+
 .products-section-img {
     display: flex;
     width: 96vw;
     padding-left: 1vw;
     padding-bottom: 1vw;
+
+    max-width: calc(3840px - 2vw);
 }
 .container-for-cards {
     justify-content: space-around;
     position: absolute;
     z-index: 1;
     top: 3vw;
+
+    max-width: 3840px;
 }
 .container-for-slogan {
     display: flex;
@@ -30,6 +39,8 @@
     border-top: solid 0.1vw black;
     border-bottom: solid 0.1vw black;
     overflow: hidden;
+
+    max-width: 3840px;
 }
 .container-for-slogan > * {
     margin: 1.8rem;

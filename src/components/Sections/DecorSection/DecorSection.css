@@ -4,6 +4,7 @@
     position: absolute;
     z-index: 2;
     top: -6.7vw;
+    max-width: 3840px;
 }
 .decor-section {
     position: relative;
