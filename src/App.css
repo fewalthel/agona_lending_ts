@@ -24,6 +24,8 @@ html {
 body {
   margin-left: 1vw;
   margin-right: 1vw;
+  overflow: hidden auto;
+
 /*  !*position: relative;*!
   display: flex; !* Важно! Включает flexbox *!
   justify-content: center; !* Центрирует по горизонтали *!*/

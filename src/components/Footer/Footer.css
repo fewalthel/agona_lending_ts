@@ -14,7 +14,7 @@ footer address {
     display: flex;
     justify-content: space-between;
     background-color: var(--secondary);
-    width: 97.8vw;
+    width: 98vw;
     font-size: 2.5rem;
     padding: 2rem;
 
@@ -33,16 +33,16 @@ footer address {
 }
 @media (max-width: 1920px) {
     footer {
-        padding-top: calc(60vw - 4.2rem);
+        padding-top: calc(59.3vw - 4rem);
     }
     footer address {
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 1.5rem;
     }
 }
 @media (max-width: 1280px) {
     footer {
-        padding-top: calc(59.35vw - 3.3rem);
+        padding-top: calc(59vw - 3.535rem);
     }
     footer address {
         font-size: 0.8rem;
