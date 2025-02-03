@@ -1,0 +1,119 @@
+/*основные*/
+.info-section {
+    grid-template-columns: 50% 50%;
+}
+.left-column,
+.right-column {
+    display: inline-block;
+    max-width: 1920px;
+}
+.left-column {
+    border-right: solid 0.1vw black;
+}
+.left-column picture img,
+.right-column picture img {
+    width: 47vw;
+    padding: 1vw;
+    max-width: 1840px;
+}
+h1 {
+    border-bottom: solid 0.1vw black;
+    text-align: center;
+    font-size: 6.6rem;
+    align-items: center;
+    box-sizing: border-box;
+    align-content: center;
+    height: calc(49vw / 2.8);
+    max-height: 600px;
+    max-width: 1920px;
+}
+.right-column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*адаптив*/
+@media (min-width: 3840px) {
+    .left-column picture img,
+    .right-column picture img {
+        padding: 40px;
+    }
+}
+@media (max-width: 3570px) {
+    h1 {
+        font-size: 6rem;
+    }
+}
+@media (max-width: 3400px) {
+    h1 {
+        font-size: 6rem;
+    }
+}
+@media (max-width: 3000px) {
+    h1 {
+        font-size: 5.3rem;
+    }
+}
+@media (max-width: 2560px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+}
+@media (max-width: 2100px) {
+    h1 {
+        font-size: 3.6rem;
+    }
+}
+@media (max-width: 1820px) {
+    h1 {
+        font-size: 3.3rem;
+    }
+}
+@media (max-width: 1580px) {
+    h1 {
+        font-size: 2.7rem;
+    }
+}
+@media (max-width: 1280px) {
+    h1 {
+        font-size: 2.1rem;
+    }
+}
+@media (max-width: 960px) {
+    .info-section{
+        grid-template-columns: 100%;
+    }
+    .left-column picture img,
+    .right-column picture img {
+        width: 100vw;
+        padding: 1rem 1rem 1rem;
+        box-sizing: border-box;
+    }
+    .left-column {
+        border: none;
+        margin-top: -2vw;
+    }
+    h1 {
+        border-top: solid 0.1vw black;
+        height: calc(60vw / 2);
+        font-size: 3rem;
+    }
+}
+@media (max-width: 800px) {
+    h1 {
+        padding: 1.5rem 2.5rem;
+        font-size: 2.22rem;
+    }
+}
+@media (max-width: 600px) {
+    h1 {
+        padding: 1rem 2rem;
+        font-size: 1.67rem;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    h1, .left-column {
+        border-color: white;
+    }
+}

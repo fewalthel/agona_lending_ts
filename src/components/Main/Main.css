@@ -1,0 +1,60 @@
+/*основные*/
+main {
+    margin-top: 7.8rem;
+    width: 98vw;
+    border: solid 0.1vw black;
+    max-width: 3840px;
+
+
+
+ /*   background-color: red;
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 10%;*/
+}
+section {
+    display: grid;
+    width: 98vw;
+
+    max-width: 3840px;
+}
+
+/*адаптив*/
+
+@media (max-width: 2560px) {
+    main {
+        margin-top: 5.5rem;
+    }
+}
+@media (max-width: 1920px) {
+    main {
+        margin-top: 5rem;
+    }
+}
+@media (max-width: 1280px) {
+    main {
+        margin-top: 3.3rem;
+    }
+}
+@media (max-width: 960px) {
+    main {
+        width: 100vw;
+        border: none;
+        margin-top: 9rem;
+    }
+    section {
+        width: 100vw;
+    }
+}
+@media (max-width: 600px) {
+    main {
+        margin-top: 6.7rem;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    main {
+        background-color: var(--dark-theme);
+        border-color: white;
+    }
+}

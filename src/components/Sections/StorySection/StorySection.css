@@ -1,0 +1,135 @@
+/*основные*/
+.story-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container-for-story,
+.container-for-story-card {
+    border-top: solid 0.1vw black;
+    max-height: 1920px;
+}
+.container-for-story h2 {
+    text-align: center;
+    height: calc(49vw/4);
+    max-height: calc(1920px / 4);
+    align-content: center;
+    font-size: 5.3rem;
+}
+.container-for-story-card {
+    position: relative;
+    width: 49vw;
+    height: 49vw;
+    border-left: solid 0.1vw black;
+    max-width: calc(1920px - 2vw);
+}
+.container-for-story-card p {
+    padding-bottom: 2vw;
+}
+.container-for-story-card h3 {
+    position: absolute;
+    z-index: 2;
+    font-size: 1.3vw;
+    text-align: center;
+    word-break: break-word;
+    top: 9.3vw;
+    left: 10vw;
+    width: 28.6vw;
+    max-height: 900px;
+    max-width: 1098.24px;
+}
+.container-for-story-card img,
+.container-for-story,
+.container-for-story img {
+    width: 49vw;
+    max-width: 1920px;
+}
+
+/*адаптив*/
+@media (min-width: 3840px) {
+    .container-for-story-card h3 {
+        font-size: 2.48rem;
+        top: 18rem;
+        left: 21rem;
+
+        max-height: 1098px;
+    }
+    .container-for-story-card p {
+        padding-bottom: 5rem;
+    }
+}
+@media (max-width: 3000px) {
+    .container-for-story h2 {
+        font-size: 4.5rem;
+    }
+}
+@media (max-width: 2560px) {
+    .container-for-story h2 {
+        font-size: 3.4rem;
+    }
+}
+@media (max-width: 1920px) {
+    .container-for-story h2 {
+        font-size: 2.6rem;
+    }
+}
+@media (max-width: 1500px) {
+    .container-for-story h2 {
+        font-size: 2.2rem;
+    }
+}
+@media (max-width: 1280px) {
+    .container-for-story h2 {
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 960px) {
+    .story-section {
+        grid-template-columns: 100%;
+    }
+    .container-for-story h2 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        font-size: 2.8rem;
+    }
+    .container-for-story-card {
+        width: 100vw;
+        height: 100vw;
+        border-left: none;
+    }
+    .container-for-story-card p {
+        padding-bottom: 3.3vw;
+    }
+    .container-for-story-card h3 {
+        width: 60vw;
+        height: 60vw;
+        font-size: 2.73vw;
+        top: 20vw;
+        left: 20vw;
+    }
+    .container-for-story-card img,
+    .container-for-story,
+    .container-for-story img {
+        width: 100vw;
+    }
+}
+@media (max-width: 760px) {
+    .container-for-story h2 {
+        padding-top: 1.8rem;
+        padding-bottom: 1.8rem;
+        font-size: 2rem;
+    }
+}
+@media (max-width: 600px) {
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    font-size: 2rem;
+}
+@media (prefers-color-scheme: dark) {
+    .container-for-story,
+    .container-for-story-card {
+        border-color: white;
+    }
+    h3 p{
+        color: black;
+    }
+}

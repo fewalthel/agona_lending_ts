@@ -1,4 +1,73 @@
-body {
+/*переменные*/
+:root {
+  --primary: #FB4B4D;
+  --secondary: #CDFD3B;
+  --primary-font: 'RobotoFont';
+  --dark-theme: #3D3669;
+  --primary-dark: #B21A1D;
+}
+
+/*общие*/
+* {
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
+  font-family: var(--primary-font), sans-serif;
+  text-decoration: none;
+  font-weight: normal;
+  color: black;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7.8rem;
+  overflow: hidden auto;
+}
+body {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+
+
+/*адаптив*/
+@media (max-width: 2560px) {
+  html {
+    scroll-padding-top: 5.5rem;
+  }
+}
+@media (max-width: 1920px) {
+  html {
+    scroll-padding-top: 5rem;
+  }
+}
+@media (max-width: 1280px) {
+  html {
+    scroll-padding-top: 3.3rem;
+  }
+}
+@media (max-width: 960px) {
+  body {
+    margin: 0;
+  }
+  html {
+    scroll-padding-top: 9rem;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    scroll-padding-top: 7.6rem;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark-theme);
+  }
+  * {
+    color: white;
+  }
 }

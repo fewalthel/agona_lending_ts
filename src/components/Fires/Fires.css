@@ -1,0 +1,78 @@
+/*основные*/
+.container-for-fires {
+    justify-content: space-between;
+    display: flex;
+    width: 98vw;
+    align-items: flex-start;
+
+    max-width: 3840px;
+}
+.container-for-fires > img {
+     padding: 3rem;
+     width: 7rem;
+
+    max-width: 192px;
+}
+
+/*адаптив*/
+
+@media (max-width: 3000px) {
+    .container-for-fires > img {
+        width: 7rem;
+    }
+}
+@media (max-width: 2560px) {
+    .container-for-fires > img {
+        width: 5rem;
+    }
+}
+@media (max-width: 1920px) {
+    .container-for-fires > img {
+        padding: 1rem;
+        width: 3.45rem;
+    }
+}
+@media (max-width: 1280px) {
+    .container-for-fires > img {
+        padding: 0.7rem;
+        width: 2.5rem;
+    }
+}
+@media (max-width: 960px) {
+    .container-for-fires {
+        width: 300vw;
+        height: 42rem;
+        padding-top: 5vw;
+        box-sizing: border-box;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .container-for-fires > img {
+        padding: 0;
+        width: 6rem;
+    }
+}
+@media (max-width: 760px) {
+    .container-for-fires {
+        height: 40rem;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+        width: 330vw;
+    }
+    .container-for-fires > img {
+        width: 5.3rem;
+    }
+}
+@media (max-width: 600px) {
+    .container-for-fires {
+        height: 30rem;
+    }
+    .container-for-fires > img {
+        width: 4rem;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .container-for-fires {
+        filter: invert(1);
+    }
+}
