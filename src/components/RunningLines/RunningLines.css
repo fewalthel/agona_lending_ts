@@ -16,7 +16,7 @@
     text-wrap: nowrap;
 }
 #container-for-top-running-line .container-for-items-of-running-line {
-    animation: run 9s linear infinite;
+    animation: run 10s linear infinite;
 }
 #container-for-average-running-line .container-for-items-of-running-line {
     animation: run 16s linear infinite;

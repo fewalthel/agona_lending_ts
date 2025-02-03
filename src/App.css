@@ -20,15 +20,14 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 7.8rem;
+  overflow: hidden auto;
 }
 body {
   margin-left: 1vw;
   margin-right: 1vw;
-  overflow: hidden auto;
-
-/*  !*position: relative;*!
-  display: flex; !* Важно! Включает flexbox *!
-  justify-content: center; !* Центрирует по горизонтали *!*/
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 ::-webkit-scrollbar {
     width: 0;

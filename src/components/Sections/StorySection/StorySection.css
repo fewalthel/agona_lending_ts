@@ -6,19 +6,20 @@
 .container-for-story,
 .container-for-story-card {
     border-top: solid 0.1vw black;
+    max-height: 1920px;
 }
 .container-for-story h2 {
-    padding-top: 2.5vw;
-    padding-bottom: 2vw;
     text-align: center;
-    font-size: 3.3vw;
+    height: calc(49vw/4);
+    max-height: calc(1920px / 4);
+    align-content: center;
+    font-size: 5.3rem;
 }
 .container-for-story-card {
     position: relative;
     width: 49vw;
     height: 49vw;
     border-left: solid 0.1vw black;
-
     max-width: calc(1920px - 2vw);
 }
 .container-for-story-card p {
@@ -30,21 +31,57 @@
     font-size: 1.3vw;
     text-align: center;
     word-break: break-word;
-    top: 10vw;
+    top: 9.3vw;
     left: 10vw;
     width: 28.6vw;
-
+    max-height: 900px;
     max-width: 1098.24px;
 }
 .container-for-story-card img,
 .container-for-story,
 .container-for-story img {
     width: 49vw;
-
     max-width: 1920px;
 }
 
 /*адаптив*/
+@media (min-width: 3840px) {
+    .container-for-story-card h3 {
+        font-size: 2.48rem;
+        top: 18rem;
+        left: 21rem;
+
+        max-height: 1098px;
+    }
+    .container-for-story-card p {
+        padding-bottom: 5rem;
+    }
+}
+@media (max-width: 3000px) {
+    .container-for-story h2 {
+        font-size: 4.5rem;
+    }
+}
+@media (max-width: 2560px) {
+    .container-for-story h2 {
+        font-size: 3.4rem;
+    }
+}
+@media (max-width: 1920px) {
+    .container-for-story h2 {
+        font-size: 2.6rem;
+    }
+}
+@media (max-width: 1500px) {
+    .container-for-story h2 {
+        font-size: 2.2rem;
+    }
+}
+@media (max-width: 1280px) {
+    .container-for-story h2 {
+        font-size: 1.7rem;
+    }
+}
 @media (max-width: 960px) {
     .story-section {
         grid-template-columns: 100%;

@@ -4,12 +4,14 @@ main {
     width: 98vw;
     border: solid 0.1vw black;
     max-width: 3840px;
-/*background-color: red;
-    max-width: 2560px;
+
+
+
+ /*   background-color: red;
     display: block;
-    !*position: absolute;
-    top: 50%;
-    left: 50%;*!*/
+    position: absolute;
+    top: 20%;
+    left: 10%;*/
 }
 section {
     display: grid;

@@ -2,9 +2,8 @@
 footer {
     border: solid 0.1vw black;
     border-top: none;
-    padding-top: calc(61.2vw - 6rem);
     width: 98vw;
-
+    padding-top: 2130px;
     max-width: 3840px;
 }
 footer address {
@@ -22,9 +21,23 @@ footer address {
 }
 
 /*адаптив*/
+@media (max-width: 3840px) {
+    footer {
+        padding-top: calc(56.8vw - 5.3rem);
+    }
+}
+@media (max-width: 3000px) {
+    footer {
+        padding-top: calc(56.8vw - 5rem);
+    }
+    footer address {
+        font-size: 2rem;
+        padding: 2.3rem;
+    }
+}
 @media (max-width: 2560px) {
     footer {
-        padding-top: calc(61.1vw - 5.6rem);
+        padding-top: calc(59vw - 5rem);
     }
     footer address {
         font-size: 1.8rem;

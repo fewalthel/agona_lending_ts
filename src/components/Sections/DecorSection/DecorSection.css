@@ -3,13 +3,27 @@
     width: 98vw;
     position: absolute;
     z-index: 2;
-    top: -7vw;
+    top: -330px;
     max-width: 3840px;
 }
 .decor-section {
     position: relative;
 }
-
+@media (max-width: 3840px) {
+    .bottom-foreign-text {
+        top: -8.7vw;
+    }
+}
+@media (min-width: 2560px) and (max-width: 3000px) {
+    .bottom-foreign-text {
+        top: -8.5vw;
+    }
+}
+@media (max-width: 1920px) {
+    .bottom-foreign-text {
+        top: -7vw;
+    }
+}
 @media(max-width: 960px) {
     /*cтилизация последней секции*/
     .bottom-foreign-text {
